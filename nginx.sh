@@ -1,5 +1,5 @@
 yes | apt-get install nginx
-mv ./nginx /www/
+cp -p ./nginx /www/nginx/
 cp -rf nginx.conf /etc/nginx
 nginx -t
 nginx -s reload
